@@ -1,0 +1,6 @@
+{
+    "Name": "ExcelChat",
+    "Host": "127.0.0.1",
+    "Port": 1233,
+    "LogTimer": 5
+}
