@@ -2,5 +2,7 @@
     "Name": "ExcelChat",
     "Host": "127.0.0.1",
     "Port": 1233,
+    "WebPort" : 1234,
+    "Update_Timer" : 5,
     "LogTimer": 5
 }

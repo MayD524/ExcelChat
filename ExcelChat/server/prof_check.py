@@ -7,8 +7,9 @@ class profCheck:
         
         
     def check_prof(self, message, user):
+        hasCursed = False
         for word in self.prof_words:
             if word in message:
                 message = message.replace(word, ''.join('*' for x in word))
-        
-        return message
+                hasCursed = True
+        return (hasCursed, message)

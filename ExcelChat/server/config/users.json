@@ -1,10 +1,18 @@
 {
-    "hello" :
-    {
-        "pwd" : "hello"
+    "hello": {
+        "pwd": "hello",
+        "current_room": "ExcelMain",
+        "rooms": [
+            "ExcelMain"
+        ],
+        "online": false
     },
-    "hello2":
-    {
-        "pwd" : "test"
+    "hello2": {
+        "pwd": "test",
+        "current_room": "ExcelMain",
+        "rooms": [
+            "ExcelMain"
+        ],
+        "online": false
     }
 }

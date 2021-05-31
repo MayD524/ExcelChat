@@ -1,0 +1,15 @@
+{
+    "notifications" : {
+        "soundNotification" : true,
+        "allowed_notifications" : "all",
+        "soundNotification_location" :"./sounds/pristine-609.mp3"
+    },
+    "GUI" : {
+        "icon_image" : "C:\\Users\\Cross\\Pictures\\Downloads\\0.png",
+        "background" : "#17202A",
+        "forground" : "#EAECEE",
+        "font" : "Helvetica",
+        "height": 550,
+        "width": 470
+    }
+}
