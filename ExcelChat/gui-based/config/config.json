@@ -1,7 +1,7 @@
 {
     "notifications" : {
         "soundNotification" : true,
-        "allowed_notifications" : "all",
+        "allowed_notifications" : "pings",
         "soundNotification_location" :"./sounds/pristine-609.mp3"
     },
     "GUI" : {

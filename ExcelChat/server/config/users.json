@@ -1,17 +1,23 @@
 {
     "hello": {
         "pwd": "hello",
-        "current_room": "ExcelMain",
+        "current_room": "random",
         "rooms": [
-            "ExcelMain"
+            "ExcelMain",
+            "TestChat",
+            "ChatTWOOOOo",
+            "test",
+            "random"
         ],
         "online": false
     },
     "hello2": {
         "pwd": "test",
-        "current_room": "ExcelMain",
+        "current_room": "comp sci",
         "rooms": [
-            "ExcelMain"
+            "ExcelMain",
+            "TestChat",
+            "comp sci"
         ],
         "online": false
     }

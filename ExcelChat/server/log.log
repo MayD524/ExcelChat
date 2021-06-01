@@ -1,73 +1,26 @@
 
-[2021-05-30 16:49:57.858685] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:49:57.858685] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:49:57.858685] [NEW_USER] hello - 127.0.0.1:4950 has connected to the server
-[2021-05-30 16:49:57.942688] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:52:33.402055] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:52:33.402055] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:52:33.402055] [NEW_USER] hello - 127.0.0.1:5004 has connected to the server
-[2021-05-30 16:52:33.483554] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:52:55.103841] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:52:55.104344] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:52:55.104844] [NEW_USER] hello - 127.0.0.1:5008 has connected to the server
-[2021-05-30 16:53:20.736928] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:53:27.328591] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:53:27.329084] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:53:27.329084] [NEW_USER] hello - 127.0.0.1:5013 has connected to the server
-[2021-05-30 16:53:29.640823] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:53:41.878193] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:53:41.878694] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:53:41.878694] [NEW_USER] hello - 127.0.0.1:5017 has connected to the server
-[2021-05-30 16:53:43.982172] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:54:22.133678] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:54:22.134179] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:54:22.134179] [NEW_USER] hello - 127.0.0.1:5022 has connected to the server
-[2021-05-30 16:54:26.491361] [PACKET_RECV] {'data': 'DECLINED', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-30 16:54:26.491361] [NEW_CHAT] hello - "DECLINED" Flag:False
-[2021-05-30 16:54:43.551735] [PACKET_RECV] {'data': '1-0', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-30 16:54:43.551735] [NEW_CHAT] hello - "1-0" Flag:False
-[2021-05-30 16:54:57.727886] [PACKET_RECV] {'data': 'eval()', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-30 16:54:57.728383] [NEW_CHAT] hello - "eval()" Flag:False
-[2021-05-30 16:55:20.436724] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 16:55:39.327566] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:55:39.328071] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 16:55:39.328600] [NEW_USER] hello - 127.0.0.1:5041 has connected to the server
-[2021-05-30 16:55:44.887850] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 18:34:11.882455] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 18:34:11.882953] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 18:34:11.883475] [NEW_USER] hello - 127.0.0.1:6050 has connected to the server
-[2021-05-30 18:34:18.060155] [PACKET_RECV] {'data': 'hkjbsdjhHGH', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
-[2021-05-30 18:36:22.596554] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 19:24:01.223549] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:24:01.224051] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:24:01.224552] [NEW_USER] hello - 127.0.0.1:6732 has connected to the server
-[2021-05-30 19:24:25.203049] [PACKET_RECV] {'data': 'ROOMCODE:Room Code', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
-[2021-05-30 19:25:15.586559] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 19:25:31.949960] [LOGGER_START] Chat Logger has started
-[2021-05-30 19:25:47.609585] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:25:47.610085] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:25:47.610586] [NEW_USER] hello - 127.0.0.1:6753 has connected to the server
-[2021-05-30 19:25:52.639932] [PACKET_RECV] {'data': 'ROOMCODE:Room Code', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
-[2021-05-30 19:26:17.190392] [PACKET_RECV] {'data': 'hello', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-30 19:26:17.190392] [NEW_CHAT] hello - "hello" Flag:False
-[2021-05-30 19:26:19.232460] [DISCONNECT] hello - hello has disconnected
-[2021-05-30 19:26:41.598734] [LOGGER_START] Chat Logger has started
-[2021-05-30 19:26:47.326657] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:26:47.327153] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-30 19:26:47.327153] [NEW_USER] hello - 127.0.0.1:6765 has connected to the server
-[2021-05-30 19:26:53.507524] [PACKET_RECV] {'data': 'ROOMCODE:Room Code', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
-[2021-05-30 19:40:03.529887] [DISCONNECT] hello - hello has disconnected
-[2021-05-31 03:03:23.374492] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-31 03:03:23.374492] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-31 03:03:23.374990] [NEW_USER] hello - 127.0.0.1:11862 has connected to the server
-[2021-05-31 03:03:34.739171] [DISCONNECT] hello - hello has disconnected
-[2021-05-31 03:03:40.434983] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-31 03:03:40.435469] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
-[2021-05-31 03:03:40.435959] [NEW_USER] hello - 127.0.0.1:11865 has connected to the server
-[2021-05-31 03:06:55.994280] [PACKET_RECV] {'data': '@hello', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-31 03:06:55.994280] [NEW_CHAT] hello - "@hello" Flag:False
-[2021-05-31 03:06:58.321282] [PACKET_RECV] {'data': 'clear', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-31 03:06:58.321282] [NEW_CHAT] hello - "clear" Flag:False
-[2021-05-31 03:07:00.921394] [PACKET_RECV] {'data': 'what is this?', 'type': 'CHAT', 'to': 'MAIN', 'from': 'hello'}
-[2021-05-31 03:07:00.921906] [NEW_CHAT] hello - "what is this?" Flag:False
-[2021-05-31 04:29:58.281438] [DISCONNECT] hello - hello has disconnected
+[2021-06-01 13:23:08.805272] [LOGGER_START] Chat Logger has started
+[2021-06-01 13:23:22.047773] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
+[2021-06-01 13:23:22.078774] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
+[2021-06-01 13:23:22.094272] [NEW_USER] hello - 127.0.0.1:12178 has connected to the server
+[2021-06-01 13:23:53.239775] [PACKET_RECV] {'data': 'hello2', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello2'}
+[2021-06-01 13:23:53.270772] [PACKET_RECV] {'data': 'test', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello2'}
+[2021-06-01 13:23:53.332776] [NEW_USER] hello2 - 127.0.0.1:12186 has connected to the server
+[2021-06-01 13:24:04.523272] [PACKET_RECV] {'data': 'SWITCHROOM:ExcelMain', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
+[2021-06-01 13:24:10.968270] [PACKET_RECV] {'data': 'test', 'type': 'CHAT', 'to': 'TestChat', 'from': 'hello2'}
+[2021-06-01 13:24:10.999278] [NEW_CHAT] hello2 - "test" Flag:False
+[2021-06-01 13:24:15.062776] [PACKET_RECV] {'data': 'SWITCHROOM:TestChat', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
+[2021-06-01 13:24:17.976271] [PACKET_RECV] {'data': 'test', 'type': 'CHAT', 'to': 'TestChat', 'from': 'hello2'}
+[2021-06-01 13:24:18.069270] [NEW_CHAT] hello2 - "test" Flag:False
+[2021-06-01 13:25:57.837773] [DISCONNECT] hello - hello has disconnected
+[2021-06-01 13:26:27.519773] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
+[2021-06-01 13:26:27.550785] [PACKET_RECV] {'data': 'hello', 'type': 'SERVER', 'to': 'ServerInfo', 'from': 'hello'}
+[2021-06-01 13:26:27.612778] [NEW_USER] hello - 127.0.0.1:12214 has connected to the server
+[2021-06-01 13:31:54.586772] [PACKET_RECV] {'data': 'ROOMCODE:MRs1fqWhjD', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
+[2021-06-01 13:31:57.919273] [PACKET_RECV] {'data': 'SWITCHROOM:random', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello'}
+[2021-06-01 13:32:26.912773] [PACKET_RECV] {'data': 'ROOMCODE:5DopiFkyYK', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello2'}
+[2021-06-01 13:32:31.515772] [PACKET_RECV] {'data': 'SWITCHROOM:comp sci', 'type': 'SERVER', 'to': 'SERVER', 'from': 'hello2'}
+[2021-06-01 13:32:42.980272] [PACKET_RECV] {'data': '@hello', 'type': 'CHAT', 'to': 'random', 'from': 'hello'}
+[2021-06-01 13:32:42.995770] [NEW_CHAT] hello - "@hello" Flag:False
+[2021-06-01 13:33:20.031278] [DISCONNECT] hello - hello has disconnected
+[2021-06-01 13:33:20.728773] [DISCONNECT] hello2 - hello2 has disconnected
