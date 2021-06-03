@@ -13,6 +13,12 @@ class ChatLogger:
         self.logBuffer   = []
         self.lastMessage = ''
     
+    def newUser(self, uName):
+        newLog = f"[{datetime.now()}] [USER_CREATED] {uName}"
+        self.logBuffer.append(newLog)
+        self.term.queue_append(newLog)
+        print(newLog)
+    
     def newConnection(self, uName, IP, port):
         newLog = f"[{datetime.now()}] [NEW_USER] {uName} - {IP}:{port} has connected to the server"
         self.logBuffer.append(newLog)

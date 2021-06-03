@@ -4,6 +4,7 @@ import file_update
 import ChatLogger
 import prof_check
 import userLogin
+import security
 import terminal
 import socket
 import psutil 
@@ -19,7 +20,7 @@ class ServerCode:
         self.config     = config
         self.termCont   = terminal.terminalControler()
         self.logger     = ChatLogger.ChatLogger("log.log", self.config["Name"], self.config, self.termCont)
-        self.file_upate = file_update.file_updater(self.config["Update_Timer"])
+        self.file_update = file_update.file_updater(self.config["Update_Timer"])
         
         self.ServerSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.profCheck    = prof_check.profCheck({})        
@@ -27,7 +28,7 @@ class ServerCode:
         self.serverConfig = UPL.Core.file_manager.getData_json('config/config.json')
         
         start_new_thread(self.logger.autoLog, (self.config["LogTimer"],))
-        start_new_thread(self.file_upate.run_updater, ())
+        start_new_thread(self.file_update.run_updater, ())
         start_new_thread(terminal.Terminal, (self.termCont, ))
         start_new_thread(self.terminal_input_thread, ())
         
@@ -62,6 +63,24 @@ class ServerCode:
                     self.ServerSocket.close()
                     psutil.Process(os.getpid()).terminate()   
                 
+                elif tmp.startswith("new_user:"):
+                    tmp =  tmp.split(":",1)[1].strip()
+                    user, pwd = tmp.split(',',1).strip()
+                    hash_pwd = security.EHash(pwd, user)
+                    
+                    self.user_data[user] = {
+                        "pwd":hash_pwd,
+                        "current_room" : "ExcelMain",
+                        "rooms" : [
+                            "ExcelMain"    
+                        ],
+                        "online" : False
+                    }
+                    self.file_update.add_queue("config/users.json", self.user_data)
+                    
+                    self.termCont.queue_append(f"You created a new user {user}")
+                    
+                
                 elif tmp.startswith("new_room:"):
                     tmp = tmp.split(':',1)[1].strip()
                     if tmp == 'all':
@@ -75,8 +94,8 @@ class ServerCode:
                     rooms[tmp] = []
                     self.chats[tmp] = []
                     
-                    self.file_upate.add_queue("config/rooms.json", rooms)
-                    self.file_upate.add_queue("config/room_codes.json", roomsC)
+                    self.file_update.add_queue("config/rooms.json", rooms)
+                    self.file_update.add_queue("config/room_codes.json", roomsC)
                 lst = self.termCont.test_msg
     
     def process_packet(self, connection, typeExpected, bufSize):
@@ -117,6 +136,8 @@ class ServerCode:
         ## get the password
         connection.send("PWORD".encode('utf-8'))
         pword = self.process_packet(connection, "SERVER", 10240)
+        pword = security.EHash(pword, name)
+        
         connection.send(f"SERVERNAME:{self.config['Name']}".encode('utf-8'))
         connection.send(f"USERDATA:{self.userData[name]}".encode('utf-8'))
         
@@ -138,7 +159,7 @@ class ServerCode:
         ## user has correct creds
         else:
             self.userData[name]['online'] = True
-            self.file_upate.add_queue(self.userfile, self.userData)
+            self.file_update.add_queue(self.userfile, self.userData)
             connection.send("SERVER_ACCEPTED".encode('utf-8'))
         
         ## The user has successfully logged in!
@@ -173,7 +194,7 @@ class ServerCode:
                         
                         if code in rooms.keys():
                             self.userData[name]['rooms'].append(rooms[code])
-                            self.file_upate.add_queue(self.userfile, self.userData)
+                            self.file_update.add_queue(self.userfile, self.userData)
                             connection.send(f"USERDATA:{self.userData[name]}".encode('utf-8')) 
         
                     elif data.startswith("SWITCHROOM:") or data.startswith("SETROOM:"):
@@ -184,7 +205,7 @@ class ServerCode:
                             self.broadcastMessage(f"{name} has left the chat", self.names[name])
                             self.names[name] = room 
                             self.userData[name]['current_room'] = room
-                            self.file_upate.add_queue(self.userfile, self.userData)
+                            self.file_update.add_queue(self.userfile, self.userData)
                             self.broadcastMessage(f"{name} has joined the chat", room)
                             connection.send(f"USERDATA:{self.userData[name]}".encode('utf-8'))
                             
@@ -192,7 +213,7 @@ class ServerCode:
             ## this will run any time the user has disconnected
             self.logger.userDisconnect(name, f"{name} has disconnected")
             self.userData[name]['online'] = False
-            self.file_upate.add_queue(self.userfile, self.userData)
+            self.file_update.add_queue(self.userfile, self.userData)
             self.chats[self.names[name]].remove(name)
             self.chats['all'].remove(name)
             connection.close()
